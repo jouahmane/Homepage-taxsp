@@ -1,0 +1,66 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+article {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Add more styles as needed */
+
+.attractive-background {
+    background-color: #f4faff; /* Change this to the color you prefer */
+    background-image: url('your-image-url.jpg'); /* Add your image URL here */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    color: #333; /* Adjust text color for readability */
+}
+

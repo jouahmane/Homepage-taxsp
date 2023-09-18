@@ -93,14 +93,14 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
     ALL: Orange Theme
    =================== */
 
-#header-container{ border-bottom: 13px solid #e44d26; }
-#footer-container{ border-top:    20px solid #e44d26; }
-#main aside      { border-top:    20px solid #e44d26; }
+#header-container{ border-bottom: 13px solid #4070df; }
+#footer-container{ border-top:    20px solid #4070df; }
+#main aside      { border-top:    20px solid #4070df; }
 
 #header-container,
 #footer-container,
 #main aside{
-	background:#f16529;
+	background:#4070df;
 }
 
 #title{
@@ -120,8 +120,8 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 	text-align:center;
 }
 
-::-moz-selection { background: #f16529; color: #fff; text-shadow: none; }
-::selection      { background: #f16529; color: #fff; text-shadow: none; }
+::-moz-selection { background: #4070df; color: #fff; text-shadow: none; }
+::selection      { background: #4070df; color: #fff; text-shadow: none; }
 
 
 
@@ -185,7 +185,7 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 	text-align:center;
 	font-weight:normal;
 	font-size:3em;
-	color:#F16529;
+	color:#4070df;
 	margin:50px 0;
 }
 
@@ -215,16 +215,16 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 
 .blank-background button,
 .blank-background a{
-	background:#bbb;
+	background:#6090ff;
 }
 
 .blank-background button:hover,
 .blank-background a:hover{
-	background:#c4c4c4;
+	background:#78a0ff;
 }
 
 .blank-background button:active{
-	background:#888;
+	background:#4070df;
 }
 
 
@@ -232,17 +232,17 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 .initializr-background button,
 .initializr-background a,
 #download-section a{
-	background:#F16529;
+	background:#6090ff;
 }
 
 .initializr-background button:hover,
 .initializr-background a:hover,
 #download-section a:hover{
-	background:#F67539;
+	background:#78a0ff;
 }
 
 .initializr-background button:active{
-	background:#d14509;
+	background:#4070df;
 }
 
 .bootstrap-background button,
@@ -352,7 +352,7 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 }
 
 .customize-section a{
-	color:#E44D26;
+	color:#4070df;
 	text-decoration:none;
 }
 
@@ -366,7 +366,7 @@ textarea{
 }
 
 #download-section a{
-	background:#F16529;
+	background:#4070df;
 	display:block;
 	text-decoration:none;
 	margin-bottom:20px;
@@ -385,7 +385,7 @@ textarea{
 }
 
 #about-container a{
-	color:#E44D26;
+	color:#ffffff;
 /* 	font-weight:bold; */
 	text-decoration:none;
 }
@@ -631,7 +631,7 @@ textarea{
 	}
 	
 	#follow-container p:before{
-		content:"Initialized by ";
+		content:" ";
 	}
 	
 	#follow-iframes-container iframe{
@@ -715,6 +715,13 @@ textarea{
 		float:right;
 	}
 
+
+	#right-corner{
+		float:right;
+	}
+
+
+
 	#github-container img{
 		float:none;
 		margin:0;
@@ -764,4 +771,113 @@ textarea{
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3{ page-break-after: avoid; }
+}
+
+
+h2 {text-align: center;}
+h1 {text-align: center;}
+
+
+.attractive-button {
+	background-color: #007bff; /* Blue background color */
+	color: #fff; /* White text color */
+	padding: 10px 20px; /* Padding for the button */
+	border: none; /* Remove border */
+	border-radius: 5px; /* Rounded corners */
+	text-decoration: none; /* Remove underlines for links */
+	font-size: 16px; /* Font size */
+	cursor: pointer; /* Cursor style on hover */
+	transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Style the button on hover */
+.attractive-button:hover {
+	background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+/* styles-homepage.css */
+
+.calculator-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.calculator-item:hover {
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+/* Style the navigation links */
+nav {
+	display: inline-block; /* Display links horizontally */
+}
+
+nav a {
+	color: #fff; /* White text color for links */
+	text-decoration: none; /* Remove underlines for links */
+	margin: 0 20px; /* Spacing between links */
+}
+
+
+.colored-text {
+	color: red; /* Define the color you want */
+}
+
+/* Reset default margin and padding for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff; /* Header background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Style for the header menu */
+.header-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header-menu li {
+    display: inline-block; /* Display menu items horizontally */
+    margin-right: 20px; /* Adjust spacing between menu items */
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: #fff; /* Menu item text color */
+    font-weight: bold;
+}
+
+/* Style for the website name */
+.website-name h1 {
+    margin: 0; /* Remove default margin */
 }
