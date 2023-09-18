@@ -1,3 +1,43 @@
+
+/* Style the select container */
+#countrySelect {
+	/* Add a background color */
+	background-color: #f2f2f2;
+	/* Set a border */
+	border: 1px solid #ccc;
+	/* Add padding and margin for spacing */
+	padding: 5px;
+	margin: 10px 0;
+	/* Set a custom width */
+	width: 200px;
+	/* Style the cursor on hover */
+	cursor: pointer;
+  }
+  
+  /* Style the options inside the select */
+  #countrySelect option {
+	/* Add background and text colors */
+	background-color: #fff;
+	color: #333;
+	/* Add padding and margin for spacing */
+	padding: 5px;
+  }
+  
+  /* Style the select when it's focused (clicked) */
+  #countrySelect:focus {
+	/* Add a box shadow for focus effect */
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the select when it's hovered */
+  #countrySelect:hover {
+	/* Add a background color change */
+	background-color: #e0e0e0;
+  }
+  
+
+
+
 /* Reset some default styles */
 body, h1, h2, p, ul {
     margin: 0;
@@ -952,3 +992,5 @@ header {
 .website-name h1 {
     margin: 0; /* Remove default margin */
 }
+
+

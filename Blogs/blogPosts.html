@@ -21,43 +21,52 @@
 						<!-- Add more menu items as needed -->
 					</ul>
 				</nav>
-			</div>	
+			</div>
+      <select id="countrySelect">
+        <option value="All Countries">All Countries</option>
+        <option value="UK">UK</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="Dutch">Dutch</option>
+        <option value="Germany">Germany</option>
+        <!-- Add more country options here -->
+      </select>	
 		</header>
 	</div>
-    <div class="blog-container">
+    <div class="blog-container" id="articles">
         <!-- Blog Post 1 -->
-        <article class="blog-post">
+        <article class="blog-post" data-country="UK">
             <h2>Understanding Child Tax Credit in the UK</h2>
             <p>Child Tax Credit is a vital financial support system in the United Kingdom designed to help families with the cost of raising children. In this comprehensive guide, we will delve into the intricacies of Child Tax Credit, including eligibility, application, benefits, and common questions regarding this crucial financial aid.</p>
             <a href="Child Tax Credit in the UK.html">Read More</a>
         </article>
 
         <!-- Blog Post 2 -->
-        <article class="blog-post">
+        <article class="blog-post" data-country="UK">
             <h2>Understanding UK Tax Bands: A Comprehensive Guide</h2>
             <p>Tax bands in the United Kingdom play a crucial role in determining how much income tax individuals and businesses owe to HM Revenue & Customs (HMRC). In this comprehensive guide, we will explore the different tax bands in the UK, how tax is calculated, and the implications for individuals and businesses.</p>
             <a href="UK Tax Bands.html">Read More</a>
         </article>
 
-        <article class="blog-post">
+        <article class="blog-post" data-country="UK">
             <h2>Understanding Tax Code 1257L: A Comprehensive Guide</h2>
             <p>Tax codes can be perplexing, especially if you're not well-versed in the intricacies of the tax system. One of the commonly used tax codes in the United Kingdom is 1257L. In this comprehensive guide, we'll break down what the 1257L tax code means, who it applies to, and how it impacts your income tax.</p>
             <a href="Tax Code 1257L.html">Read More</a>
         </article>
 
-        <article class="blog-post">
+        <article class="blog-post" data-country="UK">
             <h2>Navigating the UK Self-Employed Tax Calculator: A Comprehensive Guide</h2>
             <p>Calculating taxes as a self-employed individual in the United Kingdom can be complex, but it's a crucial responsibility. To help simplify this process, the UK offers various tax calculators, including the Self-Employed Tax Calculator. In this comprehensive guide, we will explore what the Self-Employed Tax Calculator is, how it works, and its significance for self-employed individuals in the UK.</p>
             <a href="UK Self-Employed Tax Calculator.html">Read More</a>
         </article>
 
-        <article class="blog-post">
+        <article class="blog-post" data-country="UK">
             <h2>Understanding the UK Take Home Pay Calculator: A Comprehensive Guide</h2>
             <p>Calculating your take-home pay in the United Kingdom is an essential aspect of financial planning, whether you are budgeting for a mortgage, planning a trip abroad, or making long-term financial decisions. In this comprehensive guide, we will explore the UK Take Home Pay Calculator, how it works, and its relevance in various financial scenarios.</p>
             <a href="UK Take Home Pay Calculator.html">Read More</a>
         </article>
 
-        <article class="blog-post">
+        <article class="blog-post" data-country="USA">
             <h2>Understanding Inheritance Tax in the UK: A Comprehensive Guide</h2>
             <p>Inheritance tax is a complex subject that can be challenging to navigate. In this comprehensive guide, we will explore inheritance tax in the United Kingdom, including what it is, how it works, who it affects, and strategies to mitigate its impact.</p>
             <a href="Inheritance Tax in the UK.html">Read More</a>
@@ -68,7 +77,37 @@
     </div>
 
     <footer>
-        <p>&copy; 2023 My Blog. All rights reserved.</p>
+        <p>&copy; 2023 TaxSP Blog. All rights reserved.</p>
     </footer>
+
+
+
+    <script>
+      const countrySelect = document.getElementById('countrySelect');
+      const articlesContainer = document.getElementById('articles');
+  
+      // Add an event listener to the select element
+      countrySelect.addEventListener('change', () => {
+        const selectedCountry = countrySelect.value;
+        filterArticles(selectedCountry);
+      });
+  
+      // Function to filter articles by country
+      function filterArticles(country) {
+        const articles = articlesContainer.querySelectorAll('.blog-post');
+        articles.forEach((article) => {
+          const articleCountry = article.getAttribute('data-country');
+          if (country === 'All Countries' || articleCountry === country) {
+            article.style.display = 'block';
+          } else {
+            article.style.display = 'none';
+          }
+        });
+      }
+  
+      // Initialize with "All Countries" selected
+      filterArticles('All Countries');
+    </script>
+
 </body>
 </html>
