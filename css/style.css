@@ -93,7 +93,8 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
     ALL: Orange Theme
    =================== */
 
-#header-container{ border-bottom: 13px solid #4070df; }
+
+
 #footer-container{ border-top:    20px solid #4070df; }
 #main aside      { border-top:    20px solid #4070df; }
 
@@ -390,9 +391,6 @@ textarea{
 	text-decoration:none;
 }
 
-#github-container img{
-	display:none;
-}
 
 
 #email:before{
