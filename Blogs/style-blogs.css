@@ -64,3 +64,25 @@ footer {
     color: #333; /* Adjust text color for readability */
 }
 
+
+/* Style for the header menu */
+.header-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header-menu li {
+    display: inline-block; /* Display menu items horizontally */
+    margin-right: 20px; /* Adjust spacing between menu items */
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: #fff; /* Menu item text color */
+    font-weight: bold;
+}
+
+
+.website-name h1 {
+    margin: 0; /* Remove default margin */
+}
