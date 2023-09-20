@@ -1,0 +1,1 @@
+<domain name of the advertising system or seller> , <publisher ID>, <type of relationship>
